@@ -9,9 +9,9 @@ function Export-EnvironmentVariable {
         "Process"), each holding name/value pairs. Variable names are sorted within each
         section so repeated exports diff cleanly.
 
-        The output format is the one consumed by Import-EnvironmentVariable (which applies
-        the "Machine" and "User" sections; a "Process" section is exported for reference
-        but is not imported, since process-scope variables die with the process).
+        The output format is the one consumed by Import-EnvironmentVariable, which can
+        re-apply any of the three sections (a "Process" section is applied to the current
+        session only, since process-scope variables are not persisted).
 
         Returns the FileInfo of the written file, so the result can be piped straight into
         Import-EnvironmentVariable. Supports -WhatIf and -Confirm. An existing file at the

@@ -1,6 +1,6 @@
 @{
     RootModule           = 'EnvironmentVariable.psm1'
-    ModuleVersion        = '1.0.0'
+    ModuleVersion        = '1.1.0'
     GUID                 = 'e6e54176-6803-4fe2-bdf7-cee4a8f4c63c'
     Author               = 'Mihail Mirchev'
     Copyright            = '(c) 2026 Mihail Mirchev. All rights reserved.'
